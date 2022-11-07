@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="style.css">
+    <title>Selfie por voz</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script> 
+</head>
+<body>
+    
+    <main class="mainContent">
+
+        <h1 id="titulo">Selfie por voz</h1>
+
+        <div class="form-group">
+
+            <h3>Aperte em iniciar e diga: <span id="selfie">"selfie"</span></h3>
+            <label >resultado da fala:</label>
+            <br>
+            <br>
+            <textarea id="textbox" class="form-textarea" cols="50" rows="2" readonly="true"></textarea>
+            <br>
+            <button onclick="iniciar()">
+                <span class="shadow"></span>
+                <span class="edge"></span>
+                <span class="front text"> iniciar
+                </span>
+              </button>
+
+        </div>
+
+        <div class="webcamContent">
+
+            <p>
+                webcam:
+                
+            </p>
+            <div id="webcam">
+                    
+            </div>
+
+        </div>
+
+        <div class="resultselfiecontent">
+
+        <p>Sua selfie:</p>
+        <div id="resultselfie">
+
+        </div>
+
+        </div>
+
+        <a href="" download="selfie.png"id="dowloadSelfie"></a>
+        </a>
+
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
